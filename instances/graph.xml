@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<instance format="XCSP3" type="CSP">
+    <variables>
+        <array id="entries" size="[7]" note="Entries">0 1</array>
+        <array id="exits" size="[7]" note="Exits">0 1</array>
+        <array id="corridors" size="[7][7]" note="Adjacency matrix for corridors, usage c[row][col] : c[i][j] is a corridor from i to j">0 1</array>
+        <array id="actives" size="[7]" note="Used rooms">0 1</array>
+        <array id="finals" size="[7]" note="Final rooms">0 1</array>
+    </variables>
+    <constraints>
+        <graph>
+            <matrix>corridors[][]</matrix>
+            <entries>entries[]</entries>
+            <exits>exits[]</exits>
+            <actives>actives[]</actives>
+            <finals>entries[]</finals>
+        </graph>
+    </constraints>
+</instance>
