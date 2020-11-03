@@ -13,7 +13,7 @@
             <entries>entries[]</entries>
             <exits>exits[]</exits>
             <actives>actives[]</actives>
-            <finals>entries[]</finals>
+            <finals>finals[]</finals>
         </graph>
     </constraints>
 </instance>
